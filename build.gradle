@@ -11,7 +11,11 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-
+def name1 = "Thomson"
+def name2 = "Thompson"
+def name3="jack"
+(name1,name2,name3) = [name3,name2,name1]
+println"$name1,$name2,$name3"
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
