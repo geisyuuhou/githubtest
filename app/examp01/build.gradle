@@ -6,7 +6,7 @@ android {
     compileSdk 30
 
     defaultConfig {
-        applicationId "com.example.myapplication"
+        applicationId "com.example.examp01"
         minSdk 21
         targetSdk 30
         versionCode 1
@@ -36,8 +36,3 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
-def name1 = "Thomson"
-def name2 = "Thompson"
-def name3="jack"
-(name1,name2,name3) = [name3,name2,name1]
-println"$name1,$name2,$name3"

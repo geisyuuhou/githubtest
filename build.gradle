@@ -3,19 +3,33 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        println "aaa"
     }
     dependencies {
         classpath "com.android.tools.build:gradle:7.0.0"
-
+        println "aaa3"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
-def name1 = "Thomson"
-def name2 = "Thompson"
-def name3="jack"
-(name1,name2,name3) = [name3,name2,name1]
-println"$name1,$name2,$name3"
+subprojects{
+    //apply plugin:'java'
+    repositories{
+        jcenter()
+        println "aaa2"
+    }
+}
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+def name1 = "Thomson1"
+def name2 = "Thompson1"
+def name3="jack1"
+(name1,name2,name3) = [name3,name2,name1]
+println"$name1,$name2,$name3"
+
+ext.age = 18
+ext{
+    phone = 1334512
+    address = ''
 }

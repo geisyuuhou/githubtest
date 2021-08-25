@@ -35,5 +35,7 @@ public class MainActivity extends AppCompatActivity {
         tv.setId(R.id.textView2);
         tv.setText("你好，世界");
         tv.setSaveEnabled(false);
+
     }
+
 }
