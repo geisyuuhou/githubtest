@@ -24,7 +24,7 @@ task clean(type: Delete) {
 }
 def name1 = "Thomson1"
 def name2 = "Thompson1"
-def name3="jack1"
+def name3="倪集鹏"
 (name1,name2,name3) = [name3,name2,name1]
 println"$name1,$name2,$name3"
 
